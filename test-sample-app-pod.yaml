@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: test-sample-app-pod
+  name: test-sample-app-pod
+spec:
+  containers:
+  - image: 
+    name: someimage
+  restartPolicy: Always
