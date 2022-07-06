@@ -20,6 +20,10 @@ app.get('/terrible', (req, res) => {
     res.send('Please continue doing terrible !');
 });
 
+app.get('/remarkable', (req, res) => {
+    res.send('Please continue doing remarkable !');
+});
+
 app.get('/healthz', (req, res) => {
     if(!crash){
         return res.send('healthz endpoint recovered');
