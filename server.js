@@ -16,6 +16,10 @@ app.get('/crash', (req, res) => {
     res.send('healthz endpoint crashed !');
 });
 
+app.get('/terrible', (req, res) => {
+    res.send('Please continue doing terrible !');
+});
+
 app.get('/healthz', (req, res) => {
     if(!crash){
         return res.send('healthz endpoint recovered');
