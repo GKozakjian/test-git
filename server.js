@@ -28,6 +28,10 @@ app.get('/help', (req, res) => {
     res.send('Please continue doing helpful !');
 });
 
+app.get('/work', (req, res) => {
+    res.send('Please continue doing work !');
+});
+
 app.get('/healthz', (req, res) => {
     if(!crash){
         return res.send('healthz endpoint recovered');
