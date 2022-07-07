@@ -32,6 +32,10 @@ app.get('/work', (req, res) => {
     res.send('Please continue doing work !');
 });
 
+app.get('/study', (req, res) => {
+    res.send('Please continue doing study !');
+});
+
 app.get('/healthz', (req, res) => {
     if(!crash){
         return res.send('healthz endpoint recovered');
